@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Grandstander);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Grandstander';
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.Trending {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:200px;
+    background-color:#223;
+    margin-bottom: 15px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size:72px;
+    font-family:'Open Sans';
+    padding: 5px 15px;
+    background-image: url('Screenshot\ 2024-08-08\ 171546.png');
+    color: black;
+    font-weight: bolder;
+    border-radius: 1rem;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdbdbd;
+    flex-direction: column;
+}
+
+.card:checked > body {
+    background-color: #36364d;
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: #cecece;
+    box-shadow: none;
+    border-radius: 15px;
+    transition: .5s ease-in;
+}
+
+.wrapper:hover {
+    box-shadow: 0px 7.5px 30px -5px rgba(0,0,0,0.8);
+    transform: translateY(-7.5px);
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: start;
+}
+
+.container_heading {
+    height: 400px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    background-size:cover;
+    background-origin: inherit;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 50px 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    position: relative;
+}
+
+.Maincard {
+    width: 300px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 50px 10px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card:checked > .row {
+    background-color: #bdbdbd;
+    border: 1.5px rgb(63, 74, 167);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #bdbdbd;
+}
+
+.card > .row > .icon {
+    color: white;
+    border-radius: .75rem;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.marker1 {
+    background-image: url('GeometryDashIcon.png');
+    background-size:cover;
+}
+
+.marker2 {
+    background-image: url('ClashOfClansIcon.jpg');
+    background-size:cover;
+}
+
+.marker3 {
+    background-image: url('ClashRoyaleIcon.jpg');
+    background-size:cover;
+}
+
+.marker4 {
+    background-image: url('MinecraftIcon.png');
+    background-size:cover;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+    border-radius: .75rem;
+}
+
+.description p {
+    color: #36364d;
+    padding-top: 5px;
+    font-family: 'Open Sans';
+}
+
+.description h3 {
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(to left, blue, red);
+    background-clip: text;
+}
+
+.Subheading {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.Maincard[for='s1'] {
+    background-image: url('scratch-games-title-card.avif');
+}
+
+.card[for="c1"] {
+    background-image: url('Screenshot\ 2024-08-01\ 210015.png')
+}
+.card[for="c2"] {
+    background-image: url('Screenshot\ 2024-08-08\ 171546.png')
+}
+.card[for="c3"] {
+    background-image: url('maxresdefault.jpg')
+}
+.card[for="c4"] {
+    background-image: url('Vanilla-PMP_Collection-Carousel-0_Buzzy-Bees_1280x768.avif')
+}
+.card[for="c5"] {
+    background-color: grey;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    background-color:#bdbdbd;
+    border: none;
+    border-radius: .75rem;
+    transition: all 1s ease ;
+
+}
+
+button:hover {
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.8);
+    transform: translate(-10px, -10px);
+    background-color:#dbdbdb;
+    
+}
